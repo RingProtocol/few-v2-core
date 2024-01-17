@@ -2,8 +2,9 @@ pragma solidity =0.5.16;
 
 import './interfaces/ISwapV2Factory.sol';
 import './SwapV2Pair.sol';
+import './BlastManager.sol';
 
-contract SwapV2Factory is ISwapV2Factory {
+contract SwapV2Factory is ISwapV2Factory, BlastManager {
     address public feeTo;
     address public feeToSetter;
 

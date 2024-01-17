@@ -7,8 +7,9 @@ import './libraries/UQ112x112.sol';
 import './interfaces/IERC20.sol';
 import './interfaces/ISwapV2Factory.sol';
 import './interfaces/ISwapV2Callee.sol';
+import './BlastManagerFromFactory.sol';
 
-contract SwapV2Pair is ISwapV2Pair, SwapV2ERC20 {
+contract SwapV2Pair is ISwapV2Pair, SwapV2ERC20, BlastManagerFromFactory {
     using SafeMath  for uint;
     using UQ112x112 for uint224;
 
