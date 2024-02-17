@@ -1,13 +1,13 @@
 pragma solidity =0.5.16;
 
-import './interfaces/IUniswapV2ERC20.sol';
+import './interfaces/ISwapV2ERC20.sol';
 import './libraries/SafeMath.sol';
 
-contract UniswapV2ERC20 is IUniswapV2ERC20 {
+contract SwapV2ERC20 is ISwapV2ERC20 {
     using SafeMath for uint;
 
-    string public constant name = 'Uniswap V2';
-    string public constant symbol = 'UNI-V2';
+    string public constant name = 'Ring V2';
+    string public constant symbol = 'RING-V2';
     uint8 public constant decimals = 18;
     uint  public totalSupply;
     mapping(address => uint) public balanceOf;
